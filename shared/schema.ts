@@ -6,7 +6,9 @@ export const contacts = pgTable("contacts", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull(),
+  phone: text("phone"),
   message: text("message").notNull(),
+  itinerary: text("itinerary"),
   createdAt: timestamp("created_at").defaultNow(),
 });
 

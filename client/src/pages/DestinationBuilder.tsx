@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
@@ -215,6 +216,7 @@ function generateItinerary(answers: Record<string, string>): Itinerary {
 }
 
 export default function DestinationBuilder() {
+  const [, navigate] = useLocation();
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showResults, setShowResults] = useState(false);
@@ -435,9 +437,8 @@ export default function DestinationBuilder() {
                   <Button
                     className="rounded-none bg-accent text-white gap-2 h-14 px-8 uppercase tracking-widest text-sm font-semibold"
                     onClick={() => {
-                      const el = document.getElementById('contact');
-                      if (el) el.scrollIntoView({ behavior: 'smooth' });
-                      else window.location.href = '/#contact';
+                      const name = itinerary?.title || "";
+                      navigate(`/book?itinerary=${encodeURIComponent(name)}`);
                     }}
                     data-testid="button-book-itinerary"
                   >
