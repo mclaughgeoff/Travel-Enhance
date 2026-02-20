@@ -21,7 +21,6 @@ import bostonImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-un
 import newportImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
 import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
 import heroImg from "@assets/image_(3)_1771606722262.jpg";
-import logoImg from "@assets/69607cd8c9189f798fa1a014_8_1771606757026.png";
 
 export default function Home() {
   const features = [
@@ -263,7 +262,8 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-6">
-                <img src={logoImg} alt="Blue Lobster Travel Company" className="h-16 w-auto object-contain brightness-0 invert" />
+                <Anchor className="w-6 h-6 text-accent" />
+                <span className="font-serif text-xl font-bold tracking-tight">BLUE LOBSTER</span>
               </div>
               <p className="text-white/60 text-sm leading-relaxed mb-6">
                 Curating exceptional travel experiences along the New England coast. 
