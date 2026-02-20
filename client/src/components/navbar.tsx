@@ -21,6 +21,7 @@ export function Navbar() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/#about" },
     { name: "Destinations", href: "/#destinations" },
+    { name: "Destination Builder", href: "/destination-builder" },
     { name: "FAQ", href: "/#faq" },
   ];
 
