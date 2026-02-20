@@ -83,7 +83,7 @@ export default {
         },
       },
       fontFamily: {
-        serif: ["Playfair Display", "serif"],
+        serif: ["Cormorant Garamond", "Playfair Display", "serif"],
         sans: ["DM Sans", "sans-serif"],
         mono: ["var(--font-mono)"],
       },
