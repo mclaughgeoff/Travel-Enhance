@@ -21,6 +21,7 @@ import bostonImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-un
 import newportImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
 import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
 import heroImg from "@assets/image_(3)_1771606722262.jpg";
+import newportSectionImg from "@assets/19878_1771606815891.jpg";
 
 export default function Home() {
   const features = [
@@ -179,8 +180,8 @@ export default function Home() {
         {/* Newport Mansion / Coast Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1569936870717-d5d14470c634?q=80&w=2670&auto=format&fit=crop" 
-            alt="Newport Cliff Walk" 
+            src={newportSectionImg} 
+            alt="Newport Lighthouse" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/30" />
