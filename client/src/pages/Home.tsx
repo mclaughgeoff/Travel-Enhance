@@ -20,6 +20,7 @@ import seafoodImg from "@assets/691d3c6f7a18a554a9125ab7_mitili-mitili-bRWGwN9X-
 import bostonImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-unsplash_50_1771606515397.jpg";
 import newportImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
 import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
+import heroImg from "@assets/image_(3)_1771606722262.jpg";
 
 export default function Home() {
   const features = [
@@ -77,7 +78,7 @@ export default function Home() {
         {/* Hero Background - Scenic New England Coast */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1520935543328-3e4b78913b86?q=80&w=2574&auto=format&fit=crop" 
+            src={heroImg} 
             alt="New England Coastline" 
             className="w-full h-full object-cover"
           />
