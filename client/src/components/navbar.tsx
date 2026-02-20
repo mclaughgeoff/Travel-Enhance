@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Menu, X, Anchor } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@assets/69607cd8c9189f798fa1a014_8_1771606757026.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,16 +44,14 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         <Link href="/" className="group flex items-center gap-2 z-50">
-          <Anchor className={cn(
-            "w-6 h-6 transition-colors", 
-            isScrolled ? "text-primary" : "text-white"
-          )} />
-          <span className={cn(
-            "font-serif text-xl font-bold tracking-tight transition-colors",
-            isScrolled ? "text-primary" : "text-white"
-          )}>
-            BLUE LOBSTER
-          </span>
+          <img 
+            src={logoImg} 
+            alt="Blue Lobster Travel Company" 
+            className={cn(
+              "h-12 w-auto transition-all duration-300 object-contain",
+              isScrolled ? "" : "brightness-0 invert"
+            )}
+          />
         </Link>
 
         {/* Desktop Nav */}
