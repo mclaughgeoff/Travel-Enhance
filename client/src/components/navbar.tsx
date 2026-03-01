@@ -8,6 +8,7 @@ const destinations = [
   { name: "Newport", href: "/newport" },
   { name: "Vermont", href: "/vermont" },
   { name: "Nantucket", href: "/nantucket" },
+  { name: "Maine", href: "/maine" },
 ];
 
 export function Navbar() {

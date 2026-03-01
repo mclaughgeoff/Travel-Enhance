@@ -51,6 +51,13 @@ const featuredDestinations = [
     image: nantucketSectionImg,
     href: "/nantucket",
   },
+  {
+    name: "Maine",
+    label: "Featured Destination",
+    description: "Rocky shores, towering pines, and lighthouses above the wild Atlantic. Acadia, fresh lobster, and boundless wilderness await.",
+    image: maineImg,
+    href: "/maine",
+  },
 ];
 
 export default function Home() {
