@@ -171,7 +171,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg"
-                className="bg-accent text-white hover:bg-accent/90 rounded-none h-14 px-8 uppercase tracking-widest text-sm font-semibold"
+                className="bg-[#9cbcc6] text-white hover:bg-[#9cbcc6]/90 rounded-none h-14 px-8 uppercase tracking-widest text-sm font-semibold"
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Start Exploring
