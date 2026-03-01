@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Menu, X, Anchor, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@assets/8_1772409457438.png";
 
 const destinations = [
   { name: "Newport", href: "/newport" },
@@ -74,11 +75,12 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-2 z-50">
-            <Anchor className={cn("w-6 h-6 transition-colors", isScrolled ? "text-primary" : "text-white")} />
-            <span className={cn("font-serif text-xl font-bold tracking-tight transition-colors", isScrolled ? "text-primary" : "text-white")}>
-              BLUE LOBSTER
-            </span>
+          <Link href="/" className="group flex items-center z-50">
+            <img
+              src={logoImg}
+              alt="Blue Lobster Travel Company"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}

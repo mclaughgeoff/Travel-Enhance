@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Anchor, Instagram, Anchor as LobsterIcon, Users, Compass } from "lucide-react";
+import { Instagram, Users, Compass, Anchor } from "lucide-react";
+import logoImg from "@assets/8_1772409457438.png";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import missionImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
@@ -208,14 +209,12 @@ export default function About() {
       <footer className="border-t border-white/20 px-4 md:px-8 py-12">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 items-start">
           {/* Logo */}
-          <div className="flex flex-col items-start gap-2">
-            <div className="flex items-center gap-2">
-              <Anchor className="w-8 h-8 text-white" />
-              <div>
-                <p className="font-serif text-white font-bold tracking-widest text-sm uppercase">Blue Lobster</p>
-                <p className="text-white/60 text-xs italic">Travel Company</p>
-              </div>
-            </div>
+          <div className="flex flex-col items-start">
+            <img
+              src={logoImg}
+              alt="Blue Lobster Travel Company"
+              className="h-20 w-auto brightness-0 invert"
+            />
           </div>
 
           {/* Pages */}
