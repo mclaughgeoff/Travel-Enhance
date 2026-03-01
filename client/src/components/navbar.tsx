@@ -58,7 +58,7 @@ export function Navbar() {
       <Link
         href="/destination-builder"
         data-testid="banner-itinerary-assessment"
-        className="bg-[#9cbcc6] text-white text-center text-xs tracking-widest uppercase font-semibold py-2.5 px-4 hover:bg-[#9cbcc6]/90 transition-colors"
+        className="bg-[#406b8c] text-white text-center text-xs tracking-widest uppercase font-semibold py-2.5 px-4 hover:bg-[#406b8c]/90 transition-colors"
       >
         Take our itinerary assessment now
       </Link>
