@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 const destinations = [
   { name: "Newport", href: "/newport" },
   { name: "Vermont", href: "/vermont" },
+  { name: "Nantucket", href: "/nantucket" },
 ];
 
 export function Navbar() {

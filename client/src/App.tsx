@@ -8,6 +8,7 @@ import DestinationBuilder from "@/pages/DestinationBuilder";
 import BookTrip from "@/pages/BookTrip";
 import Newport from "@/pages/Newport";
 import Vermont from "@/pages/Vermont";
+import Nantucket from "@/pages/Nantucket";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/book" component={BookTrip} />
       <Route path="/newport" component={Newport} />
       <Route path="/vermont" component={Vermont} />
+      <Route path="/nantucket" component={Nantucket} />
       <Route component={NotFound} />
     </Switch>
   );

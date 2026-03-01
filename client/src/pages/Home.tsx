@@ -27,6 +27,7 @@ import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brr
 import heroImg from "@assets/image_(3)_1771606722262.jpg";
 import newportSectionImg from "@assets/19878_1771606815891.jpg";
 import vermontSectionImg from "@assets/691e7eb6171db9217d72b20d_corwin-thiessen-fOJuNc3clEg-unsplash_1772407293780.jpg";
+import nantucketSectionImg from "@assets/image_1772405202157.jpg";
 
 const featuredDestinations = [
   {
@@ -42,6 +43,13 @@ const featuredDestinations = [
     description: "New England's quiet masterpiece. Rolling green mountains, covered bridges, and vibrant villages wrapped in autumn color.",
     image: vermontSectionImg,
     href: "/vermont",
+  },
+  {
+    name: "Nantucket",
+    label: "Featured Destination",
+    description: "Thirty miles out to sea, where cobblestone streets meet endless coastline and the spirit of the golden age of sail still fills the salt air.",
+    image: nantucketSectionImg,
+    href: "/nantucket",
   },
 ];
 
