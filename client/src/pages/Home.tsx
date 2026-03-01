@@ -23,7 +23,7 @@ import {
 import seafoodImg from "@assets/691d3c6f7a18a554a9125ab7_mitili-mitili-bRWGwN9X-ZU-unsplash_1771606515397.jpg";
 import bostonImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-unsplash_50_1771606515397.jpg";
 import newportImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
-import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
+import maineImg from "@assets/katherine-chase-0DtoVEDaJbs-unsplash_1772407874514.jpg";
 import heroImg from "@assets/image_(3)_1771606722262.jpg";
 import newportSectionImg from "@assets/19878_1771606815891.jpg";
 import vermontSectionImg from "@assets/691e7eb6171db9217d72b20d_corwin-thiessen-fOJuNc3clEg-unsplash_1772407293780.jpg";

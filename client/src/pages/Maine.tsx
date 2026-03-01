@@ -23,7 +23,7 @@ import {
   Binoculars,
 } from "lucide-react";
 
-import heroImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
+import heroImg from "@assets/katherine-chase-0DtoVEDaJbs-unsplash_1772407874514.jpg";
 import maineCardImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-unsplash_50_1771606515397.jpg";
 
 const highlights = [
