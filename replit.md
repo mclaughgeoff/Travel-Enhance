@@ -2,7 +2,13 @@
 
 ## Overview
 
-Blue Lobster Travel is a luxury travel website focused on New England destinations. It's a full-stack web application with a marketing-style homepage featuring scroll animations, a destination builder quiz, and a contact form. The brand identity uses a nautical/maritime theme with a luxury editorial design aesthetic (serif headings, sharp corners, navy/gold color palette).
+Blue Lobster Travel is a luxury travel website focused on New England destinations. It's a full-stack web application with a marketing-style homepage featuring scroll animations, a destination builder quiz, dedicated destination pages, and a contact form. The brand identity uses a nautical/maritime theme with a luxury editorial design aesthetic (serif headings, sharp corners, maritime blue/gold color palette, primary color #406b8c).
+
+### Pages / Routes
+- `/` — Home (hero, features, Newport spotlight, destinations grid, contact form, footer)
+- `/destination-builder` — Interactive quiz to build a custom itinerary
+- `/book` — Book a trip form (accepts `?itinerary=` query param)
+- `/newport` — Dedicated Newport, RI destination page with highlights, itinerary, and practical info
 
 ## User Preferences
 

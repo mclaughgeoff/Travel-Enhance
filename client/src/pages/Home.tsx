@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/ui/section";
 import { ContactForm } from "@/components/contact-form";
@@ -199,13 +200,14 @@ export default function Home() {
             <p className="text-white/90 text-lg max-w-md mb-10 leading-relaxed drop-shadow-md">
               Step into the Gilded Age. Experience the breathtaking Cliff Walk, historic mansions, and world-class sailing culture.
             </p>
-            <Button 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-primary rounded-none h-14 px-10 uppercase tracking-widest font-semibold bg-transparent backdrop-blur-sm"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Discover Now
-            </Button>
+            <Link href="/newport">
+              <Button 
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-primary rounded-none h-14 px-10 uppercase tracking-widest font-semibold bg-transparent backdrop-blur-sm"
+              >
+                Discover Now
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

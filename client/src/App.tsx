@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import DestinationBuilder from "@/pages/DestinationBuilder";
 import BookTrip from "@/pages/BookTrip";
+import Newport from "@/pages/Newport";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/destination-builder" component={DestinationBuilder} />
       <Route path="/book" component={BookTrip} />
+      <Route path="/newport" component={Newport} />
       <Route component={NotFound} />
     </Switch>
   );

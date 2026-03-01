@@ -21,16 +21,23 @@ export function Navbar() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/#about" },
     { name: "Destinations", href: "/#destinations" },
+    { name: "Newport", href: "/newport" },
     { name: "Destination Builder", href: "/destination-builder" },
-    { name: "FAQ", href: "/#faq" },
   ];
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id.replace('/#', ''));
+  const scrollToSection = (href: string) => {
+    const sectionId = href.replace('/#', '');
+    setIsMobileMenuOpen(false);
+
+    if (location !== "/") {
+      window.location.href = href;
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
