@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 import seafoodImg from "@assets/691d3c6f7a18a554a9125ab7_mitili-mitili-bRWGwN9X-ZU-unsplash_1771606515397.jpg";
-import bostonImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-unsplash_50_1771606515397.jpg";
+import bostonImg from "@assets/kumar-mehul-CM3eDvnOExA-unsplash_1772407897470.jpg";
 import newportImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
 import maineImg from "@assets/katherine-chase-0DtoVEDaJbs-unsplash_1772407874514.jpg";
 import heroImg from "@assets/image_(3)_1771606722262.jpg";

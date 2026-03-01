@@ -22,7 +22,7 @@ import {
   Ship,
 } from "lucide-react";
 
-import heroImg from "@assets/691e753cf7ca4404923582e6_jimmy-woo-SUMtPksZXBE-unsplash_50_1771606515397.jpg";
+import heroImg from "@assets/kumar-mehul-CM3eDvnOExA-unsplash_1772407897470.jpg";
 import bostonCardImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
 
 const highlights = [
