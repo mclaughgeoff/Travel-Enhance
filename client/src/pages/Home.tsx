@@ -94,9 +94,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-white/90 text-sm md:text-base tracking-[0.2em] uppercase font-medium mb-4 block">
-              Discover the Coast
-            </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight text-shadow-lg">
               Welcome To Blue Lobster <br/> Travel Company
             </h1>
