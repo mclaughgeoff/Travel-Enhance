@@ -268,7 +268,7 @@ export default function Home() {
 
         {/* Text content */}
         <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 w-full text-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeSlide}
@@ -283,7 +283,7 @@ export default function Home() {
                 <h2 className="text-5xl md:text-7xl font-serif text-white mb-8">
                   {featuredDestinations[activeSlide].name}
                 </h2>
-                <p className="text-white/90 text-lg max-w-md mb-10 leading-relaxed drop-shadow-md">
+                <p className="text-white/90 text-lg max-w-md mb-10 leading-relaxed drop-shadow-md mx-auto">
                   {featuredDestinations[activeSlide].description}
                 </p>
                 <Link href={featuredDestinations[activeSlide].href}>
