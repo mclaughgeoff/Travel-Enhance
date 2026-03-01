@@ -23,7 +23,7 @@ import {
   Sun,
 } from "lucide-react";
 
-import heroImg from "@assets/image_1772405202157.jpg";
+import heroImg from "@assets/alyssa-ruggieri-thWUxkPLEHk-unsplash_1772407843673.jpg";
 import nantucketCardImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs-unsplash-1_1771606515396.jpg";
 
 const highlights = [

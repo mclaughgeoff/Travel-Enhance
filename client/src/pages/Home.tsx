@@ -27,7 +27,7 @@ import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brr
 import heroImg from "@assets/image_(3)_1771606722262.jpg";
 import newportSectionImg from "@assets/19878_1771606815891.jpg";
 import vermontSectionImg from "@assets/691e7eb6171db9217d72b20d_corwin-thiessen-fOJuNc3clEg-unsplash_1772407293780.jpg";
-import nantucketSectionImg from "@assets/image_1772405202157.jpg";
+import nantucketSectionImg from "@assets/alyssa-ruggieri-thWUxkPLEHk-unsplash_1772407843673.jpg";
 
 const featuredDestinations = [
   {
