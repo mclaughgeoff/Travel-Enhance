@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import DestinationBuilder from "@/pages/DestinationBuilder";
 import BookTrip from "@/pages/BookTrip";
 import Newport from "@/pages/Newport";
+import Vermont from "@/pages/Vermont";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/destination-builder" component={DestinationBuilder} />
       <Route path="/book" component={BookTrip} />
       <Route path="/newport" component={Newport} />
+      <Route path="/vermont" component={Vermont} />
       <Route component={NotFound} />
     </Switch>
   );
