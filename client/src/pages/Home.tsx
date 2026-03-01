@@ -58,6 +58,13 @@ const featuredDestinations = [
     image: maineImg,
     href: "/maine",
   },
+  {
+    name: "Boston",
+    label: "Featured Destination",
+    description: "Where America's story began. Revolutionary history, world-class culture, legendary food, and unmistakable New England character.",
+    image: bostonImg,
+    href: "/boston",
+  },
 ];
 
 export default function Home() {
