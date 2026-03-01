@@ -94,18 +94,20 @@ export function Navbar() {
             </button>
 
             {isDestDropdownOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-44 bg-background border border-border shadow-lg">
-                {destinations.map((dest) => (
-                  <Link
-                    key={dest.name}
-                    href={dest.href}
-                    data-testid={`nav-dest-${dest.name.toLowerCase()}`}
-                    onClick={() => setIsDestDropdownOpen(false)}
-                    className="block px-5 py-3 text-sm font-medium text-primary hover:text-accent hover:bg-muted tracking-wide uppercase transition-colors"
-                  >
-                    {dest.name}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-44 pt-3">
+                <div className="bg-background border border-border shadow-lg">
+                  {destinations.map((dest) => (
+                    <Link
+                      key={dest.name}
+                      href={dest.href}
+                      data-testid={`nav-dest-${dest.name.toLowerCase()}`}
+                      onClick={() => setIsDestDropdownOpen(false)}
+                      className="block px-5 py-3 text-sm font-medium text-primary hover:text-accent hover:bg-muted tracking-wide uppercase transition-colors"
+                    >
+                      {dest.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
