@@ -1,9 +1,10 @@
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "wouter";
 import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/ui/section";
 import { ContactForm } from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { 
   Anchor, 
   MapPin, 
@@ -14,7 +15,9 @@ import {
   Facebook,
   Twitter,
   Mail,
-  ArrowRight
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 import seafoodImg from "@assets/691d3c6f7a18a554a9125ab7_mitili-mitili-bRWGwN9X-ZU-unsplash_1771606515397.jpg";
@@ -23,8 +26,51 @@ import newportImg from "@assets/691e7461c0c5f59e3fd18c8e_mv-vacation-oTLwZ4WgQPs
 import maineImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
 import heroImg from "@assets/image_(3)_1771606722262.jpg";
 import newportSectionImg from "@assets/19878_1771606815891.jpg";
+import vermontSectionImg from "@assets/691e7eb6171db9217d72b20d_corwin-thiessen-fOJuNc3clEg-unsplash_1772407293780.jpg";
+
+const featuredDestinations = [
+  {
+    name: "Newport, RI",
+    label: "Featured Destination",
+    description: "Step into the Gilded Age. Experience the breathtaking Cliff Walk, historic mansions, and world-class sailing culture.",
+    image: newportSectionImg,
+    href: "/newport",
+  },
+  {
+    name: "Vermont",
+    label: "Featured Destination",
+    description: "New England's quiet masterpiece. Rolling green mountains, covered bridges, and vibrant villages wrapped in autumn color.",
+    image: vermontSectionImg,
+    href: "/vermont",
+  },
+];
 
 export default function Home() {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  const goTo = useCallback((idx: number) => {
+    setDirection(idx > activeSlide ? 1 : -1);
+    setActiveSlide(idx);
+  }, [activeSlide]);
+
+  const prev = useCallback(() => {
+    const idx = (activeSlide - 1 + featuredDestinations.length) % featuredDestinations.length;
+    setDirection(-1);
+    setActiveSlide(idx);
+  }, [activeSlide]);
+
+  const next = useCallback(() => {
+    const idx = (activeSlide + 1) % featuredDestinations.length;
+    setDirection(1);
+    setActiveSlide(idx);
+  }, [activeSlide]);
+
+  useEffect(() => {
+    const timer = setInterval(next, 6000);
+    return () => clearInterval(timer);
+  }, [next]);
+
   const features = [
     {
       icon: <Compass className="w-8 h-8 text-accent" />,
@@ -172,39 +218,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Destination: Newport */}
-      <section className="relative h-[80vh] md:h-[600px] flex items-center overflow-hidden">
-        {/* Newport Mansion / Coast Image */}
-        <div className="absolute inset-0">
-          <img 
-            src={newportSectionImg} 
-            alt="Newport Lighthouse" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/30" />
-        </div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full text-center md:text-left">
+      {/* Featured Destinations Carousel */}
+      <section className="relative h-[80vh] md:h-[600px] overflow-hidden">
+        <AnimatePresence initial={false} custom={direction}>
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            key={activeSlide}
+            custom={direction}
+            variants={{
+              enter: (d: number) => ({ x: d > 0 ? "100%" : "-100%", opacity: 0 }),
+              center: { x: 0, opacity: 1 },
+              exit: (d: number) => ({ x: d > 0 ? "-100%" : "100%", opacity: 0 }),
+            }}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="absolute inset-0"
           >
-            <span className="text-white text-sm tracking-[0.2em] uppercase font-bold mb-4 block">Featured Destination</span>
-            <h2 className="text-5xl md:text-7xl font-serif text-white mb-8">Newport, RI</h2>
-            <p className="text-white/90 text-lg max-w-md mb-10 leading-relaxed drop-shadow-md">
-              Step into the Gilded Age. Experience the breathtaking Cliff Walk, historic mansions, and world-class sailing culture.
-            </p>
-            <Link href="/newport">
-              <Button 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary rounded-none h-14 px-10 uppercase tracking-widest font-semibold bg-transparent backdrop-blur-sm"
-              >
-                Discover Now
-              </Button>
-            </Link>
+            <img
+              src={featuredDestinations[activeSlide].image}
+              alt={featuredDestinations[activeSlide].name}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/35" />
           </motion.div>
+        </AnimatePresence>
+
+        {/* Text content */}
+        <div className="relative z-10 h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeSlide}
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -16 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <span className="text-white text-sm tracking-[0.2em] uppercase font-bold mb-4 block">
+                  {featuredDestinations[activeSlide].label}
+                </span>
+                <h2 className="text-5xl md:text-7xl font-serif text-white mb-8">
+                  {featuredDestinations[activeSlide].name}
+                </h2>
+                <p className="text-white/90 text-lg max-w-md mb-10 leading-relaxed drop-shadow-md">
+                  {featuredDestinations[activeSlide].description}
+                </p>
+                <Link href={featuredDestinations[activeSlide].href}>
+                  <Button
+                    variant="outline"
+                    className="border-white text-white hover:bg-white hover:text-primary rounded-none h-14 px-10 uppercase tracking-widest font-semibold bg-transparent backdrop-blur-sm"
+                    data-testid="button-carousel-discover"
+                  >
+                    Discover Now
+                  </Button>
+                </Link>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
+
+        {/* Prev / Next arrows */}
+        <button
+          onClick={prev}
+          data-testid="button-carousel-prev"
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center border border-white/50 text-white hover:bg-white/20 transition-colors"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={next}
+          data-testid="button-carousel-next"
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center border border-white/50 text-white hover:bg-white/20 transition-colors"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+
+        {/* Dot indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+          {featuredDestinations.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => goTo(idx)}
+              data-testid={`button-carousel-dot-${idx}`}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                idx === activeSlide ? "bg-white w-6" : "bg-white/45 hover:bg-white/70"
+              }`}
+            />
+          ))}
         </div>
       </section>
 
