@@ -9,11 +9,11 @@
   --background: 210 20% 98%;      /* Off-white paper */
   --foreground: 222 47% 11%;      /* Deep navy almost black */
   
-  --primary: 216 50% 16%;         /* Navy Blue */
+  --primary: 206 37% 40%;         /* Maritime Blue #406b8c */
   --primary-foreground: 210 40% 98%;
   
   --secondary: 38 40% 96%;        /* Sand / Beige */
-  --secondary-foreground: 216 50% 16%;
+  --secondary-foreground: 206 37% 40%;
   
   --muted: 210 40% 96%;
   --muted-foreground: 215 16% 47%;
@@ -26,7 +26,7 @@
   
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --ring: 216 50% 16%;
+  --ring: 206 37% 40%;
   
   --radius: 0rem; /* Sharp corners fit the luxury editorial vibe better than rounded-xl */
 }
