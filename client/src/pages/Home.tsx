@@ -83,8 +83,8 @@ export default function Home() {
             alt="New England Coastline" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/40 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
+          <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/15" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
