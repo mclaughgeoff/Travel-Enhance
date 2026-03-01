@@ -98,8 +98,7 @@ export default function Home() {
               Welcome To Blue Lobster <br/> Travel Company
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light mb-10 max-w-2xl mx-auto leading-relaxed text-shadow">
-              Experience New England like never before. 
-              Curated journeys through maritime history, culinary excellence, and natural beauty.
+              Experience New England like never before.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
