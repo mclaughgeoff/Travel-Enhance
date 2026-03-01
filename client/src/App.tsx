@@ -11,6 +11,7 @@ import Vermont from "@/pages/Vermont";
 import Nantucket from "@/pages/Nantucket";
 import Maine from "@/pages/Maine";
 import Boston from "@/pages/Boston";
+import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/nantucket" component={Nantucket} />
       <Route path="/maine" component={Maine} />
       <Route path="/boston" component={Boston} />
+      <Route path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>
   );

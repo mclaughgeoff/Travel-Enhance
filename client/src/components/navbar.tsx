@@ -86,9 +86,9 @@ export function Navbar() {
             <button data-testid="nav-home" onClick={() => scrollToSection("/")} className={linkClass}>
               Home
             </button>
-            <button data-testid="nav-about" onClick={() => scrollToSection("about")} className={linkClass}>
+            <Link data-testid="nav-about" href="/about" className={cn(linkClass, location === "/about" && "text-accent")}>
               About Us
-            </button>
+            </Link>
             {/* Destinations Dropdown */}
             <div
               ref={dropdownRef}
@@ -163,13 +163,14 @@ export function Navbar() {
           >
             Home
           </button>
-          <button
+          <Link
             data-testid="mobile-nav-about"
-            onClick={() => { scrollToSection("about"); setIsMobileMenuOpen(false); }}
+            href="/about"
+            onClick={() => setIsMobileMenuOpen(false)}
             className="text-2xl font-serif text-primary hover:text-accent transition-colors"
           >
             About Us
-          </button>
+          </Link>
           {/* Mobile Destinations */}
           <div className="flex flex-col items-center gap-4">
             <button
