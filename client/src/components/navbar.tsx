@@ -10,6 +10,7 @@ const destinations = [
   { name: "Nantucket", href: "/nantucket" },
   { name: "Maine", href: "/maine" },
   { name: "Boston", href: "/boston" },
+  { name: "Destination Quiz", href: "/destination-builder" },
 ];
 
 export function Navbar() {
@@ -88,10 +89,6 @@ export function Navbar() {
             <button data-testid="nav-about" onClick={() => scrollToSection("about")} className={linkClass}>
               About Us
             </button>
-            <Link data-testid="nav-builder" href="/destination-builder" className={cn(linkClass, location === "/destination-builder" && "text-accent")}>
-              Dest Builder Quiz
-            </Link>
-
             {/* Destinations Dropdown */}
             <div
               ref={dropdownRef}
@@ -173,15 +170,6 @@ export function Navbar() {
           >
             About Us
           </button>
-          <Link
-            data-testid="mobile-nav-builder"
-            href="/destination-builder"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="text-2xl font-serif text-primary hover:text-accent transition-colors"
-          >
-            Dest Builder Quiz
-          </Link>
-
           {/* Mobile Destinations */}
           <div className="flex flex-col items-center gap-4">
             <button
