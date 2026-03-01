@@ -270,7 +270,7 @@ export default function DestinationBuilder() {
     <div className="min-h-screen flex flex-col font-sans bg-background text-foreground">
       <Navbar />
 
-      <div className="relative pt-24 pb-16 bg-primary text-white">
+      <div className="relative pt-36 pb-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
