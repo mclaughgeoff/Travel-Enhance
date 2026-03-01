@@ -79,10 +79,14 @@ export function Navbar() {
           </Link>
 
           {/* Destinations Dropdown */}
-          <div ref={dropdownRef} className="relative">
+          <div
+            ref={dropdownRef}
+            className="relative"
+            onMouseEnter={() => setIsDestDropdownOpen(true)}
+            onMouseLeave={() => setIsDestDropdownOpen(false)}
+          >
             <button
               data-testid="nav-destinations"
-              onClick={() => setIsDestDropdownOpen((o) => !o)}
               className={cn(linkClass, "flex items-center gap-1")}
             >
               Destinations
