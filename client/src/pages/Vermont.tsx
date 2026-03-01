@@ -23,7 +23,7 @@ import {
   Snowflake,
 } from "lucide-react";
 
-import heroImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
+import heroImg from "@assets/691e7eb6171db9217d72b20d_corwin-thiessen-fOJuNc3clEg-unsplash_1772407293780.jpg";
 import vermontCardImg from "@assets/691d3c6f7a18a554a9125ab7_mitili-mitili-bRWGwN9X-ZU-unsplash_1771606515397.jpg";
 
 const highlights = [
