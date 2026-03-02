@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@assets/8_1772409457438.png";
+import lobsterImg from "@assets/4_1772409867670.png";
 
 const destinations = [
   { name: "Newport", href: "/newport" },
@@ -77,9 +77,9 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2 z-50">
             <img
-              src={logoImg}
+              src={lobsterImg}
               alt="Blue Lobster"
-              className="h-12 w-12 object-cover object-top flex-shrink-0"
+              className="h-10 w-auto flex-shrink-0"
             />
             <span className={cn("font-serif text-xl font-bold tracking-tight transition-colors", isScrolled ? "text-primary" : "text-white")}>
               BLUE LOBSTER

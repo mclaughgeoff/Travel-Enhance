@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/ui/section";
-import logoImg from "@assets/8_1772409457438.png";
+import lobsterImg from "@assets/4_1772409867670.png";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
@@ -384,7 +384,7 @@ export default function Boston() {
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-1">
               <Link href="/" className="flex items-center gap-3 mb-6">
-                <img src={logoImg} alt="Blue Lobster" className="h-16 w-16 object-cover object-top brightness-0 invert flex-shrink-0" />
+                <img src={lobsterImg} alt="Blue Lobster" className="h-16 w-auto brightness-0 invert flex-shrink-0" />
                 <span className="font-serif text-xl font-bold tracking-tight">BLUE LOBSTER</span>
               </Link>
               <p className="text-white/60 text-sm leading-relaxed mb-6">

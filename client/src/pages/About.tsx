@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Instagram, Users, Compass, Anchor } from "lucide-react";
-import logoImg from "@assets/8_1772409457438.png";
+import lobsterImg from "@assets/4_1772409867670.png";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import missionImg from "@assets/691d3e3ccae95133d2764eac_andrew-castillo-jkK8B9brrS4-unsplash-_1771606515396.jpg";
@@ -210,7 +210,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 items-start">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logoImg} alt="Blue Lobster" className="h-16 w-16 object-cover object-top brightness-0 invert flex-shrink-0" />
+            <img src={lobsterImg} alt="Blue Lobster" className="h-16 w-auto brightness-0 invert flex-shrink-0" />
             <span className="font-serif text-xl font-bold tracking-tight text-white">BLUE LOBSTER</span>
           </div>
 
