@@ -79,9 +79,9 @@ export function Navbar() {
             <img
               src={lobsterImg}
               alt="Blue Lobster"
-              className="h-10 w-auto flex-shrink-0"
+              className="h-14 w-auto flex-shrink-0"
             />
-            <span className={cn("font-serif text-xl font-bold tracking-tight transition-colors", isScrolled ? "text-primary" : "text-white")}>
+            <span className={cn("font-serif text-2xl font-bold tracking-tight transition-colors", isScrolled ? "text-primary" : "text-white")}>
               BLUE LOBSTER
             </span>
           </Link>
