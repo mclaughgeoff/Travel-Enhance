@@ -2,10 +2,11 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/ui/section";
+import logoImg from "@assets/8_1772409457438.png";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
-  Anchor,
+  
   MapPin,
   Clock,
   Calendar,
@@ -382,9 +383,8 @@ export default function Maine() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-1">
-              <Link href="/" className="flex items-center gap-2 mb-6">
-                <Anchor className="w-6 h-6 text-accent" />
-                <span className="font-serif text-xl font-bold tracking-tight">BLUE LOBSTER</span>
+              <Link href="/" className="block mb-6">
+                <img src={logoImg} alt="Blue Lobster Travel Company" className="h-20 w-auto brightness-0 invert" />
               </Link>
               <p className="text-white/60 text-sm leading-relaxed mb-6">
                 Curating exceptional travel experiences along the New England coast.
