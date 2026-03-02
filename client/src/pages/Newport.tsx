@@ -396,9 +396,6 @@ export default function Newport() {
                 <a href="https://www.facebook.com/profile.php?id=61587563116957" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent transition-all duration-300 text-white">
                   <Facebook className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-accent hover:border-accent transition-all duration-300 text-white">
-                  <Twitter className="w-4 h-4" />
-                </a>
               </div>
             </div>
 
