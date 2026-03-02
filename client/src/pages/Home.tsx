@@ -406,7 +406,7 @@ export default function Home() {
               <h4 className="font-serif text-lg mb-6">Explore</h4>
               <ul className="space-y-4 text-sm text-white/70">
                 <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Destinations</a></li>
+                <li><a href="#destinations" className="hover:text-accent transition-colors">Destinations</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Experiences</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Travel Journal</a></li>
               </ul>
