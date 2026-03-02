@@ -259,11 +259,11 @@ export default function BookTrip() {
                 <div className="space-y-4 text-muted-foreground">
                   <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-accent" />
-                    <span>(617) 555-0199</span>
+                    <span>(+1) 508 258 9262</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-accent" />
-                    <span>bookings@bluelobstertravel.com</span>
+                    <span>info@bluelobstertravelco.com</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-accent" />

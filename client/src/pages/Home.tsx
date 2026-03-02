@@ -434,7 +434,7 @@ export default function Home() {
                 </p>
                 <p className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-accent" />
-                  hello@bluelobster.travel
+                  info@bluelobstertravelco.com
                 </p>
                 <p className="flex items-center gap-3">
                   <Compass className="w-4 h-4 text-accent" />

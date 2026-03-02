@@ -436,7 +436,7 @@ export default function Maine() {
                 </p>
                 <p className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-accent" />
-                  hello@bluelobster.travel
+                  info@bluelobstertravelco.com
                 </p>
                 <p className="flex items-center gap-3">
                   <Camera className="w-4 h-4 text-accent" />
