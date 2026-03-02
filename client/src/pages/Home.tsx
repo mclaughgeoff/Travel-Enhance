@@ -164,7 +164,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 leading-tight text-shadow-lg">
-              Experience New England Like Never Before
+              Experience New England <br /> Like Never Before
             </h1>
             <p className="text-lg md:text-xl text-white/90 font-light mb-10 max-w-2xl mx-auto leading-relaxed text-shadow">
               Experience New England like never before.
