@@ -229,7 +229,7 @@ export default function TermsOfService() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          Terms of Service
+          Terms and Conditions
         </motion.h1>
         <motion.p
           className="text-white/60 text-sm mt-4"
