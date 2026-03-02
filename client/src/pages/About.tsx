@@ -220,6 +220,9 @@ export default function About() {
             <ul className="space-y-2">
               <li><Link href="/" className="text-white/70 hover:text-white text-sm transition-colors">Home</Link></li>
               <li><Link href="/about" className="text-white/70 hover:text-white text-sm transition-colors">About Us</Link></li>
+              <li><Link href="/faq" className="text-white/70 hover:text-white text-sm transition-colors">FAQ</Link></li>
+              <li><Link href="/privacy" className="text-white/70 hover:text-white text-sm transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-white/70 hover:text-white text-sm transition-colors">Terms and Conditions</Link></li>
               <li><Link href="/#contact" className="text-white/70 hover:text-white text-sm transition-colors">Contact</Link></li>
             </ul>
           </div>
