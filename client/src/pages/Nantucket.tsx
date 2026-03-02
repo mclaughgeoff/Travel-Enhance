@@ -419,7 +419,7 @@ export default function Nantucket() {
               <ul className="space-y-4 text-sm text-white/70">
                 <li><Link href="/faq" className="hover:text-accent transition-colors">FAQ</Link></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
+                <li><Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
                 <li><Link href="/terms" className="hover:text-accent transition-colors">Terms and Conditions</Link></li>
               </ul>
             </div>
