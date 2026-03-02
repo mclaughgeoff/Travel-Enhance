@@ -94,6 +94,9 @@ export function Navbar() {
             <Link data-testid="nav-about" href="/about" className={cn(linkClass, location === "/about" && "text-accent")}>
               About Us
             </Link>
+            <Link data-testid="nav-faq" href="/faq" className={cn(linkClass, location === "/faq" && "text-accent")}>
+              FAQ
+            </Link>
             {/* Destinations Dropdown */}
             <div
               ref={dropdownRef}
@@ -175,6 +178,14 @@ export function Navbar() {
             className="text-2xl font-serif text-primary hover:text-accent transition-colors"
           >
             About Us
+          </Link>
+          <Link
+            data-testid="mobile-nav-faq"
+            href="/faq"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-2xl font-serif text-primary hover:text-accent transition-colors"
+          >
+            FAQ
           </Link>
           {/* Mobile Destinations */}
           <div className="flex flex-col items-center gap-4">
