@@ -227,7 +227,7 @@ export default function About() {
           {/* Social */}
           <div>
             <h4 className="text-white font-semibold uppercase tracking-widest text-xs mb-4">Follow Us</h4>
-            <a href="#" aria-label="Instagram" className="text-white/70 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/bluelobstertravelco/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/70 hover:text-white transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
           </div>
