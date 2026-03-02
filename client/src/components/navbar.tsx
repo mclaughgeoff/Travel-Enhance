@@ -75,12 +75,15 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="group flex items-center z-50">
+          <Link href="/" className="group flex items-center gap-2 z-50">
             <img
               src={logoImg}
-              alt="Blue Lobster Travel Company"
-              className="h-12 w-auto"
+              alt="Blue Lobster"
+              className="h-12 w-12 object-cover object-top flex-shrink-0"
             />
+            <span className={cn("font-serif text-xl font-bold tracking-tight transition-colors", isScrolled ? "text-primary" : "text-white")}>
+              BLUE LOBSTER
+            </span>
           </Link>
 
           {/* Desktop Nav */}

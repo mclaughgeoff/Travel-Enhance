@@ -209,12 +209,9 @@ export default function About() {
       <footer className="border-t border-white/20 px-4 md:px-8 py-12">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 items-start">
           {/* Logo */}
-          <div className="flex flex-col items-start">
-            <img
-              src={logoImg}
-              alt="Blue Lobster Travel Company"
-              className="h-20 w-auto brightness-0 invert"
-            />
+          <div className="flex items-center gap-3">
+            <img src={logoImg} alt="Blue Lobster" className="h-16 w-16 object-cover object-top brightness-0 invert flex-shrink-0" />
+            <span className="font-serif text-xl font-bold tracking-tight text-white">BLUE LOBSTER</span>
           </div>
 
           {/* Pages */}

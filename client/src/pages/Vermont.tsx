@@ -383,8 +383,9 @@ export default function Vermont() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-1">
-              <Link href="/" className="block mb-6">
-                <img src={logoImg} alt="Blue Lobster Travel Company" className="h-20 w-auto brightness-0 invert" />
+              <Link href="/" className="flex items-center gap-3 mb-6">
+                <img src={logoImg} alt="Blue Lobster" className="h-16 w-16 object-cover object-top brightness-0 invert flex-shrink-0" />
+                <span className="font-serif text-xl font-bold tracking-tight">BLUE LOBSTER</span>
               </Link>
               <p className="text-white/60 text-sm leading-relaxed mb-6">
                 Curating exceptional travel experiences along the New England coast. 
