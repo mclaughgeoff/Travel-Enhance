@@ -415,7 +415,7 @@ export default function Home() {
             <div>
               <h4 className="font-serif text-lg mb-6">Support</h4>
               <ul className="space-y-4 text-sm text-white/70">
-                <li><a href="#" className="hover:text-accent transition-colors">FAQ</a></li>
+                <li><Link href="/faq" className="hover:text-accent transition-colors">FAQ</Link></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Contact Us</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
